@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D052E4682951016A001E9BAA /* date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D052E4672951016A001E9BAA /* date-Extension.swift */; };
+		D07676AB2950907A0069FF65 /* SportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07676A92950907A0069FF65 /* SportTableViewCell.swift */; };
+		D07676AC2950907A0069FF65 /* SportTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07676AA2950907A0069FF65 /* SportTableViewCell.xib */; };
+		D07676AF295095DD0069FF65 /* TeamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07676AD295095DD0069FF65 /* TeamCollectionViewCell.swift */; };
+		D07676B0295095DD0069FF65 /* TeamCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07676AE295095DD0069FF65 /* TeamCollectionViewCell.xib */; };
 		D0F1B795294A28AF000E37D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F1B794294A28AF000E37D3 /* AppDelegate.swift */; };
 		D0F1B797294A28AF000E37D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F1B796294A28AF000E37D3 /* SceneDelegate.swift */; };
 		D0F1B799294A28AF000E37D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F1B798294A28AF000E37D3 /* ViewController.swift */; };
@@ -16,6 +21,10 @@
 		D0F1B7AC294A28B3000E37D3 /* BetanoChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F1B7AB294A28B3000E37D3 /* BetanoChallengeTests.swift */; };
 		D0F1B7B6294A28B3000E37D3 /* BetanoChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F1B7B5294A28B3000E37D3 /* BetanoChallengeUITests.swift */; };
 		D0F1B7B8294A28B3000E37D3 /* BetanoChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F1B7B7294A28B3000E37D3 /* BetanoChallengeUITestsLaunchTests.swift */; };
+		D0F1B7C6294A2906000E37D3 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F1B7C5294A2906000E37D3 /* Global.swift */; };
+		D0F1B7C8294A296E000E37D3 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F1B7C7294A296E000E37D3 /* Network.swift */; };
+		D0F1B7CB294A2A56000E37D3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F1B7CA294A2A56000E37D3 /* Model.swift */; };
+		D0F1B7CE294A2AFA000E37D3 /* SportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F1B7CD294A2AFA000E37D3 /* SportViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D052E4672951016A001E9BAA /* date-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "date\U0010-Extension.swift"; sourceTree = "<group>"; };
+		D07676A92950907A0069FF65 /* SportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTableViewCell.swift; sourceTree = "<group>"; };
+		D07676AA2950907A0069FF65 /* SportTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SportTableViewCell.xib; sourceTree = "<group>"; };
+		D07676AD295095DD0069FF65 /* TeamCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCollectionViewCell.swift; sourceTree = "<group>"; };
+		D07676AE295095DD0069FF65 /* TeamCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamCollectionViewCell.xib; sourceTree = "<group>"; };
 		D0F1B791294A28AF000E37D3 /* BetanoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetanoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F1B794294A28AF000E37D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0F1B796294A28AF000E37D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +63,10 @@
 		D0F1B7B1294A28B3000E37D3 /* BetanoChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetanoChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F1B7B5294A28B3000E37D3 /* BetanoChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetanoChallengeUITests.swift; sourceTree = "<group>"; };
 		D0F1B7B7294A28B3000E37D3 /* BetanoChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetanoChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D0F1B7C5294A2906000E37D3 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		D0F1B7C7294A296E000E37D3 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Network.swift; path = ../../../../../Network.swift; sourceTree = "<group>"; };
+		D0F1B7CA294A2A56000E37D3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		D0F1B7CD294A2AFA000E37D3 /* SportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +94,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D04F99DB29521D5D0007748A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D0F1B798294A28AF000E37D3 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D052E46629510152001E9BAA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D052E4672951016A001E9BAA /* date-Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D07676A8295090560069FF65 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				D07676A92950907A0069FF65 /* SportTableViewCell.swift */,
+				D07676AA2950907A0069FF65 /* SportTableViewCell.xib */,
+				D07676AD295095DD0069FF65 /* TeamCollectionViewCell.swift */,
+				D07676AE295095DD0069FF65 /* TeamCollectionViewCell.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
 		D0F1B788294A28AF000E37D3 = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +144,14 @@
 		D0F1B793294A28AF000E37D3 /* BetanoChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				D04F99DB29521D5D0007748A /* ViewController */,
+				D052E46629510152001E9BAA /* Extension */,
+				D07676A8295090560069FF65 /* Xib */,
+				D0F1B7CC294A2ADD000E37D3 /* ViewModel */,
+				D0F1B7C9294A2A49000E37D3 /* Model */,
+				D0F1B7C4294A28ED000E37D3 /* Helper */,
 				D0F1B794294A28AF000E37D3 /* AppDelegate.swift */,
 				D0F1B796294A28AF000E37D3 /* SceneDelegate.swift */,
-				D0F1B798294A28AF000E37D3 /* ViewController.swift */,
 				D0F1B79A294A28AF000E37D3 /* Main.storyboard */,
 				D0F1B79D294A28B3000E37D3 /* Assets.xcassets */,
 				D0F1B79F294A28B3000E37D3 /* LaunchScreen.storyboard */,
@@ -125,6 +175,31 @@
 				D0F1B7B7294A28B3000E37D3 /* BetanoChallengeUITestsLaunchTests.swift */,
 			);
 			path = BetanoChallengeUITests;
+			sourceTree = "<group>";
+		};
+		D0F1B7C4294A28ED000E37D3 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D0F1B7C5294A2906000E37D3 /* Global.swift */,
+				D0F1B7C7294A296E000E37D3 /* Network.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		D0F1B7C9294A2A49000E37D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0F1B7CA294A2A56000E37D3 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D0F1B7CC294A2ADD000E37D3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D0F1B7CD294A2AFA000E37D3 /* SportViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +308,8 @@
 			files = (
 				D0F1B7A1294A28B3000E37D3 /* LaunchScreen.storyboard in Resources */,
 				D0F1B79E294A28B3000E37D3 /* Assets.xcassets in Resources */,
+				D07676AC2950907A0069FF65 /* SportTableViewCell.xib in Resources */,
+				D07676B0295095DD0069FF65 /* TeamCollectionViewCell.xib in Resources */,
 				D0F1B79C294A28AF000E37D3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,8 +335,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D07676AF295095DD0069FF65 /* TeamCollectionViewCell.swift in Sources */,
+				D0F1B7C8294A296E000E37D3 /* Network.swift in Sources */,
+				D052E4682951016A001E9BAA /* date-Extension.swift in Sources */,
+				D0F1B7CE294A2AFA000E37D3 /* SportViewModel.swift in Sources */,
+				D0F1B7C6294A2906000E37D3 /* Global.swift in Sources */,
 				D0F1B799294A28AF000E37D3 /* ViewController.swift in Sources */,
+				D0F1B7CB294A2A56000E37D3 /* Model.swift in Sources */,
 				D0F1B795294A28AF000E37D3 /* AppDelegate.swift in Sources */,
+				D07676AB2950907A0069FF65 /* SportTableViewCell.swift in Sources */,
 				D0F1B797294A28AF000E37D3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +529,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +558,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
