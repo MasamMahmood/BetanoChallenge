@@ -23,11 +23,11 @@ I'm a iOS Developer 💻
 ## Working Functionality
 - MVVM Design pattern
 - Protocol & Delegate
-- Events should scroll horizontally, each row representing a different sport.
-- Users should be allowed to mark an event as a favourite and favourites should appear first in their respective row. You do not need to persist them after the application is killed, marking them volatilely as favourites for a single run is
-enough.
-- Each event must display a countdown to its starting time.
-- Users should be able to collapse and expand events per sport.
+- Events are scrolling horizontally, each section-row representing a different sport.
+- Users are allowed to mark an event as a favourite 
+- Favourites are appearing first in their respective row.
+- Each event is displaying a countdown to its starting time.
+- Users are able to collapse and expand events per sport.
 - A navigation bar with the app name.
 
 <br>
