@@ -25,7 +25,7 @@ class SportViewModel {
         }
     }
     
-    func sortData(sortValue: String) {
+    func sortData(sortValue: String, completion: @escaping () -> Void) {
         for (index,j) in self.arrCodigo.enumerated() {
             for (index2, h) in j.e.enumerated() {
                 if h.i == sortValue {
@@ -43,6 +43,7 @@ class SportViewModel {
         
         let sortedArray = self.arrCodigo.map( { SportElement(i: $0.i, d: $0.d, e: $0.e.sorted { $0.sortType && !$1.sortType }) })
         self.arrCodigo = sortedArray
+        completion()
     }
 }
 

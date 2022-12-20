@@ -129,8 +129,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 extension ViewController: dataReload {
     
     func getDataReload(iValue: String) {
-        codigoViewModel.sortData(sortValue: iValue)
-        self.tableView.reloadData()
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
+            self.codigoViewModel.sortData(sortValue: iValue) { [weak self] in
+                self?.tableView.reloadData()
+                
+            }
+        }
     }
     
 }
