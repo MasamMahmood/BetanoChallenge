@@ -24,5 +24,25 @@ class SportViewModel {
             Success()
         }
     }
+    
+    func sortData(sortValue: String) {
+        for (index,j) in self.arrCodigo.enumerated() {
+            for (index2, h) in j.e.enumerated() {
+                if h.i == sortValue {
+                    if h.sortType == false {
+                        self.arrCodigo[index].e[index2].sortType = true
+                    } else {
+                        self.arrCodigo[index].e[index2].sortType = false
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        
+        let sortedArray = self.arrCodigo.map( { SportElement(i: $0.i, d: $0.d, e: $0.e.sorted { $0.sortType && !$1.sortType }) })
+        self.arrCodigo = sortedArray
+    }
 }
 

@@ -11,6 +11,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     var codigoViewModel = SportViewModel()
+    let activityIndicator = UIActivityIndicatorView.init(style: .large)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,8 @@ class ViewController: UIViewController {
         let nib = UINib.init(nibName: "SportTableViewCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: "SportTableViewCell")
         self.tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0)
+        self.activityIndicator.startAnimating()
+        self.tableView.backgroundView = self.activityIndicator
         
         DispatchQueue.main.asyncAfter(deadline: .now()+1.0) {
             self.fetchData()
@@ -31,7 +34,7 @@ class ViewController: UIViewController {
     func fetchData() {
         self.codigoViewModel.getDataTask { [weak self] in
             self?.tableView.reloadData()
-            //self?.activityIndicator.stopAnimating()
+            self?.activityIndicator.stopAnimating()
             
         }
     }
@@ -126,25 +129,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 extension ViewController: dataReload {
     
     func getDataReload(iValue: String) {
-        
-        for (index,j) in codigoViewModel.arrCodigo.enumerated() {
-            for (index2, h) in j.e.enumerated() {
-                if h.i == iValue {
-                    if h.sortType == false {
-                        codigoViewModel.arrCodigo[index].e[index2].sortType = true
-                    } else {
-                        codigoViewModel.arrCodigo[index].e[index2].sortType = false
-                    }
-                    
-                }
-                
-            }
-            
-        }
-        
-        let sortedArray = codigoViewModel.arrCodigo.map( { SportElement(i: $0.i, d: $0.d, e: $0.e.sorted { $0.sortType && !$1.sortType }) })
-        codigoViewModel.arrCodigo = sortedArray
-    
+        codigoViewModel.sortData(sortValue: iValue)
         self.tableView.reloadData()
     }
     
